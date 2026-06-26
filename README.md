@@ -47,28 +47,6 @@ Here are a few of the key projects highlighted in this portfolio:
 * **Cliftunes:** A cross-platform e-commerce mobile and web application. Built the UI/UX and front-end utilizing React Native and Tailwind CSS, backed by a robust Supabase infrastructure.
 
 
----
-
-## ⚙️ Getting Started
-
-To run this portfolio locally on your machine:
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/yourusername/your-portfolio-repo.git](https://github.com/yourusername/your-portfolio-repo.git)
-
-```
-
-2. Navigate into the directory:
-```bash
-cd your-portfolio-repo
-
-```
-
-
-3. Open `index.html` in your preferred web browser. No local server or build process is required!
-
----
 
 ## 📫 Let's Connect
 
