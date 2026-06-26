@@ -46,7 +46,7 @@ Here are a few of the key projects highlighted in this portfolio:
 
 * **Cliftunes:** A cross-platform e-commerce mobile and web application. Built the UI/UX and front-end utilizing React Native and Tailwind CSS, backed by a robust Supabase infrastructure.
 
-
+---
 
 ## 📫 Let's Connect
 
