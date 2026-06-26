@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lars Ulrich J. Pons - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loading" id="loader">
+        <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+        </div>
+    </div>
+
+    <div class="portfolio-wrapper" id="portfolio">
+        
+        <header class="navbar">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="about" class="hero-section scroll-section">
+            <div class="profile-card">
+                <img src="/Assets/lars_2.jpg" alt="Lars Ulrich J. Pons">
+            </div>
+            
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Lars Ulrich J. Pons</h1>
+                <p class="bio">
+                    A hardworking and passionate Computer Science student with a 
+                    strong foundation in front-end development and multimedia design. 
+                    Looking for a creative and collaborative environment where I can 
+                    apply my skills, contribute to engaging projects, and continue to 
+                    grow professionally.
+                </p>
+            </div>
+        </main>
+
+        <div id="projects" class="scroll-section">
+            
+            <div class="projects-marquee">
+                <div class="marquee-track">
+                    <span>PROJECTS</span>
+                    <span class="outline">PROJECTS</span>
+                    <span>PROJECTS</span>
+                    <span class="outline">PROJECTS</span>
+                    <span>PROJECTS</span>
+                    <span class="outline">PROJECTS</span>
+                    <span>PROJECTS</span>
+                    <span class="outline">PROJECTS</span>
+                </div>
+            </div>
+
+            <section class="projects-section">
+                <div class="owl-carousel custom-carousel owl-theme">
+                    
+                    <div class="item active" style="background-image: url('https://placehold.co/600x800/1e1e1e/3b82f6?text=Cliftunes');">
+                        <div class="item-desc">
+                            <h3>Cliftunes</h3>
+                            <p>A cross-platform mobile and web application. Built using React Native and Tailwind CSS, featuring a robust Supabase backend infrastructure.</p>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('https://placehold.co/600x800/1e1e1e/3b82f6?text=BreakTime');">
+                        <div class="item-desc">
+                            <h3>BreakTime</h3>
+                            <p>A campus mobile app utilizing geocoding to help students locate study and leisure spots, powered by SAW and Levenshtein algorithms.</p>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('https://placehold.co/600x800/1e1e1e/3b82f6?text=Akyat+Bundok');">
+                        <div class="item-desc">
+                            <h3>Akyat Bundok</h3>
+                            <p>A PC-based 2.5D cooperative physics platformer featuring a custom shared ragdoll system, center of mass algorithms, and multiplayer synchronization.</p>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url('https://placehold.co/600x800/1e1e1e/3b82f6?text=Asylum');">
+                        <div class="item-desc">
+                            <h3>Asylum</h3>
+                            <p>A cooperative multiplayer horror game for PC. Designed with a retro PS1-style low-poly aesthetic and features Goal-Oriented Action Planning.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer id="contacts" class="contacts-section scroll-section">
+            <h2>Let's Work Together</h2>
+            <p>I'm currently open for new opportunities and collaborations.</p>
+            <a href="mailto:lars@example.com" class="contact-btn">Send me an Email</a>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
