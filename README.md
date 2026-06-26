@@ -55,7 +55,7 @@ To run this portfolio locally on your machine:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/LarsUlrichPons/Portfolio](https://github.com/LarsUlrichPons/Portfolio)
+   git clone [https://github.com/yourusername/your-portfolio-repo.git](https://github.com/yourusername/your-portfolio-repo.git)
 
 ```
 
@@ -78,7 +78,7 @@ I am currently open for new opportunities, collaborations, and creative projects
 * **Phone:** (63) 945 529 0837
 * **Location:** Tondo, Manila, Metro Manila
 
-Project Link: [[https://github.com/yourusername/your-portfolio-repo](https://github.com/LarsUlrichPons/Portfolio)
+Project Link: [https://github.com/LarsUlrichPons/Portfolio](https://github.com/LarsUlrichPons/Portfolio)
 
 ```
 
