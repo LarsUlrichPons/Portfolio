@@ -8,23 +8,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+ 
     <div class="loading" id="loader">
-        <div class="loading-text">
-            <span class="loading-text-words">L</span>
-            <span class="loading-text-words">O</span>
-            <span class="loading-text-words">A</span>
-            <span class="loading-text-words">D</span>
-            <span class="loading-text-words">I</span>
-            <span class="loading-text-words">N</span>
-            <span class="loading-text-words">G</span>
-        </div>
+        <main class="game-loader">
+            <svg viewBox="-50 -50 100 100" width="100" height="100">
+                <defs>
+                    <path id="line" d="M -50 0 h 100" />
+                    <path id="slice" d="M 0 0 v -50 h 50 z" />
+                    <mask id="mask-circle">
+                        <circle r="48" stroke-width="4" fill="none" stroke="hsl(0, 0%, 100%)" />
+                        <g fill="none" stroke="hsl(0, 0%, 0%)" stroke-width="6">
+                            <use href="#line" />
+                            <use transform="rotate(45)" href="#line" />
+                            <use transform="rotate(-45)" href="#line" />
+                            <use transform="rotate(90)" href="#line" />
+                        </g>
+                    </mask>
+                </defs>
+                <g mask="url(#mask-circle)">
+                    <g class="reduce-opacity">
+                        <g fill="currentColor">
+                            <use href="#slice" />
+                            <use transform="rotate(45)" href="#slice" />
+                            <use transform="rotate(90)" href="#slice" />
+                            <use transform="rotate(135)" href="#slice" />
+                            <use transform="rotate(180)" href="#slice" />
+                            <use transform="rotate(225)" href="#slice" />
+                            <use transform="rotate(270)" href="#slice" />
+                            <use transform="rotate(315)" href="#slice" />
+                        </g>
+                    </g>
+                </g>
+                <g class="transform-rotateY">
+                    <g fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="square">
+                        <path d="M -20 0 l 20 -22 20 22 -20 22" />
+                    </g>
+                </g>
+            </svg>
+
+            <div class="loader-text">
+                <p>Loading...</p>
+                <p>Do not turn off the power.</p>
+            </div>
+        </main>
     </div>
 
     <div class="portfolio-wrapper" id="portfolio">
@@ -54,21 +89,30 @@
                     apply my skills, contribute to engaging projects, and continue to 
                     grow professionally.
                 </p>
+
+                <!-- CORE SKILLS SECTION -->
+                <div class="core-skills">
+                    <h3>Core Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Front-end (React Native, HTML, CSS, JS)</span>
+                        <span class="skill-tag">UI/UX Design (Figma)</span>
+                        <span class="skill-tag">2D & 3D Game Dev (Unity)</span>
+                        <span class="skill-tag">Video Editing (DaVinci Resolve)</span>
+                    </div>
+                </div>
+
             </div>
         </main>
 
-        <div id="projects" class="scroll-section">
-            
+    <div id="projects" class="scroll-section full-screen-section">
             <div class="projects-marquee">
                 <div class="marquee-track">
-                    <span>PROJECTS</span>
-                    <span class="outline">PROJECTS</span>
-                    <span>PROJECTS</span>
-                    <span class="outline">PROJECTS</span>
-                    <span>PROJECTS</span>
-                    <span class="outline">PROJECTS</span>
-                    <span>PROJECTS</span>
-                    <span class="outline">PROJECTS</span>
+                    <span>Software & Application Development</span>
+                    <span class="outline">Software & Application Development</span>
+                    <span>Software & Application Development</span>
+                    <span class="outline">Software & Application Development</span>
+                    <span>Software & Application Development</span>
+                    <span class="outline">Software & Application Development</span>
                 </div>
             </div>
 
@@ -105,17 +149,128 @@
 
                 </div>
             </section>
+
+        <div id="multimedia" class="scroll-section full-screen-section">
+            <div class="projects-marquee">
+                <div class="marquee-track">
+                    <span>Multimedia & Game Design</span>
+                    <span class="outline">Multimedia & Game Design</span>
+                    <span>Multimedia & Game Design</span>
+                    <span class="outline">Multimedia & Game Design</span>
+                    <span>Multimedia & Game Design</span>
+                    <span class="outline">Multimedia & Game Design</span>
+                </div>
+            </div>
+
+            <section class="netflix-carousel">
+                <div class="netflix-row">
+                    <div class="netflix-row__inner">
+
+                        <div class="tile">
+                            <div class="tile__media">
+                                <img class="tile__img" src="https://placehold.co/400x225/1e1e1e/3b82f6?text=Asylum" alt="Asylum" />
+                            </div>
+                            <div class="tile__details">
+                                <div class="tile__title">Asylum</div>
+                                <div class="tile__subtitle">PS1-Style Retro Horror</div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div class="tile__media">
+                                <img class="tile__img" src="https://placehold.co/400x225/1e1e1e/3b82f6?text=Akyat+Bundok" alt="Akyat Bundok" />
+                            </div>
+                            <div class="tile__details">
+                                <div class="tile__title">Akyat Bundok</div>
+                                <div class="tile__subtitle">PC Physics Platformer</div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div class="tile__media">
+                                <img class="tile__img" src="https://placehold.co/400x225/1e1e1e/3b82f6?text=Kazuha+Edit" alt="Kazuha Edit" />
+                            </div>
+                            <div class="tile__details">
+                                <div class="tile__title">LE SSERAFIM Concept</div>
+                                <div class="tile__subtitle">DaVinci Resolve Edit</div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div class="tile__media">
+                                <img class="tile__img" src="https://placehold.co/400x225/1e1e1e/3b82f6?text=Unsaid+Feelings" alt="Unsaid Feelings" />
+                            </div>
+                            <div class="tile__details">
+                                <div class="tile__title">Unsaid Feelings</div>
+                                <div class="tile__subtitle">Tondo Horror Experience</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <footer id="contacts" class="contacts-section scroll-section">
-            <h2>Let's Work Together</h2>
+        <footer id="contacts" class="contacts-section scroll-section full-screen-section">
+            <h2>Let's Connect</h2>
             <p>I'm currently open for new opportunities and collaborations.</p>
-            <a href="mailto:lars@example.com" class="contact-btn">Send me an Email</a>
-        </footer>
-    </div>
+
+    <div class="social-grid">
+                <a href="#" class="social-card github secure-link" data-tilt data-tilt-max="20" data-tilt-glare data-tilt-max-glare="0.2" data-secure="aHR0cHM6Ly9naXRodWIuY29tL0xhcnNVbHJpY2hQb25z">
+                    <div class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="#" class="social-card discord secure-link" data-tilt data-tilt-max="20" data-tilt-glare data-tilt-max-glare="0.2" data-secure="aHR0cHM6Ly9kaXNjb3JkYXBwLmNvbS91c2Vycy8xMTU0MDc0Nzk1NTYzMDI4NTMw">
+                    <div class="social-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <span>Discord</span>
+                </a>
+
+                <a href="#" class="social-card facebook secure-link" data-tilt data-tilt-max="20" data-tilt-glare data-tilt-max-glare="0.2" data-secure="aHR0cHM6Ly93ZWIuZmFjZWJvb2suY29tL2xhcnN1bHJpY2hwb25zOQ==">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="#" class="social-card instagram secure-link" data-tilt data-tilt-max="20" data-tilt-glare data-tilt-max-glare="0.2" data-secure="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS91bHJ4aC8=">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <span>Instagram</span>
+                </a>
+
+                <a href="#" class="social-card tiktok secure-link" data-tilt data-tilt-max="20" data-tilt-glare data-tilt-max-glare="0.2" data-secure="aHR0cHM6Ly93d3cudGlrdG9rLmNvbS9AdWxyeGg/aXNfZnJvbV93ZWJhcHA9MSZzZW5kZXJfZGV2aWNlPXBj">
+                    <div class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <span>TikTok</span>
+                </a>
+
+                <a href="#" class="social-card phone secure-link" data-tilt data-tilt-max="20" data-tilt-glare data-tilt-max-glare="0.2" data-secure="dGVsOis2Mzk0NTUyOTA4Mzc=">
+                    <div class="social-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <span>Contact</span>
+                </a>
+
+                <a href="#" class="social-card gmail secure-link" data-tilt data-tilt-max="20" data-tilt-glare data-tilt-max-glare="0.2" data-secure="bWFpbHRvOmxhcnNwb25zN0BnbWFpbC5jb20=">
+                    <div class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>Gmail</span>
+                </a>
+            </div>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
