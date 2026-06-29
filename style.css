@@ -203,7 +203,7 @@ body {
 
 .name {
     /* Shrinks to 2.5rem on phones, scales fluidly in between, caps at 4.5rem on desktops */
-    font-size: clamp(2.5rem, 5vw, 4.5rem); 
+    font-size: clamp(2.5rem, 5vw, 4rem); 
     font-weight: 100;
     margin-bottom: 1.5rem;
     letter-spacing: -3px; 
@@ -689,8 +689,25 @@ body {
 /* === RESPONSIVE DESIGN (Tablets & Mobile) === */
 @media (max-width: 768px) {
     /* 1. Navbar adjustments */
-    .navbar { padding-bottom: 0.5rem; }
-    .nav-links { gap: 1.5rem; font-size: 1.1rem; }
+   /* 1. Navbar adjustments */
+    .navbar { 
+        padding-bottom: 0; 
+    }
+    
+    .navbar nav {
+        justify-content: center; /* Centers the links instead of pushing them right */
+        padding: 1rem 0.5rem;    /* Reduces the padding to maximize screen width */
+    }
+    
+    .nav-links { 
+        gap: 1.5rem;          /* Tighter spacing between links */
+        justify-content: center;
+        flex-wrap: wrap;      /* Allows links to wrap safely on incredibly tiny screens */
+    }
+    
+    .nav-links a {
+        font-size: 1rem;      /* Slightly smaller text for mobile */
+    }
     
     /* 2. Hero Section: Stack image and text vertically */
     .hero-section {
