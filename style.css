@@ -372,13 +372,16 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .projects-section .item-desc p {
-    font-size: 0.95rem;
+    padding: 5px 5px;
+    font-size: 0.85rem;
+    text-align: justify;
     line-height: 1.5;
-    color: #b0b0b0;
+    color: #5694f0;
+    background-color: rgba(0, 0, 0, 0.767);
     opacity: 0;
     transform: translateY(32px);
     transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1) 0.1s;
